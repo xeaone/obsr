@@ -1,0 +1,31 @@
+{
+  "name": "obsr",
+  "version": "1.0.0",
+  "description": "Obsr - A small powerful observable objects arrays",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Alexander Elias",
+  "license": "MPL-2.0",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexanderElias/obsr.git"
+  },
+  "keywords": [
+    "observable",
+    "observe",
+    "watch",
+    "object",
+    "objects",
+    "array",
+    "arrays"
+  ],
+  "bugs": {
+    "url": "https://github.com/AlexanderElias/obsr/issues"
+  },
+  "homepage": "https://github.com/AlexanderElias/obsr#readme"
+}
