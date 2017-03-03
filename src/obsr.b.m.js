@@ -1,7 +1,7 @@
 /*
 	@preserve
 	title: obsr
-	version: 1.0.1
+	version: 1.0.2
 	license: mpl-2.0
 	author: alexander elias
 */

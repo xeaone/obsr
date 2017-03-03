@@ -1,4 +1,4 @@
-var Obsr = require('../index');
+var Obsr = require('../src/obsr.b.m.js');
 
 (function() {
 	'use strict';
