@@ -1,17 +1,14 @@
 {
   "name": "obsr",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Obsr - A small powerful observable objects arrays",
   "browser": "dist/obsr.js",
-  "main": "src/obsr.b.m.js",
+  "main": "src/obsr.js",
   "scripts": {
-    "test": "node test"
+    "build": "muleify pack src dist -m"
   },
   "author": "Alexander Elias",
   "license": "MPL-2.0",
-  "directories": {
-    "test": "test"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlexanderElias/obsr.git"

@@ -1,7 +1,7 @@
 /*
 	@preserve
 	title: obsr
-	version: 1.0.2
+	version: 1.0.3
 	license: mpl-2.0
 	author: alexander elias
 */
@@ -37,7 +37,7 @@ Obsr.prototype.ins = function (observed, callback, prefix, key, value) {
 	}
 
 	observed = Object.defineProperty(observed, key, this.descriptor(prefix + key, value, callback));
-	callback(prefix + key, value);
+	if (callback) callback(prefix + key, value);
 };
 
 Obsr.prototype.del = function (observed, callback, prefix, key) {
@@ -49,7 +49,7 @@ Obsr.prototype.del = function (observed, callback, prefix, key) {
 		key = l;
 	}
 
-	callback(prefix + key, undefined);
+	if (callback) callback(prefix + key, undefined);
 };
 
 Obsr.prototype.create = function (observable, callback, prefix, trigger) {
@@ -75,7 +75,7 @@ Obsr.prototype.create = function (observable, callback, prefix, trigger) {
 
 		if (type === 'Object' || type === 'Array') value = this.create(value, callback, prefix + key);
 		observed = Object.defineProperty(observed, key, this.descriptor(prefix + key, value, callback));
-		if (trigger) callback(prefix + key, value);
+		if (trigger && callback) callback(prefix + key, value);
 	}
 
 	return observed;

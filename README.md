@@ -12,5 +12,8 @@ There are two methods that are included on observed objects and arrays (even nes
 All major browsers that support ES5 including IE9.
 
 
-# Install
+## Install
 `npm install obsr --save`
+
+## Examples
+Please see the test directory for now.
